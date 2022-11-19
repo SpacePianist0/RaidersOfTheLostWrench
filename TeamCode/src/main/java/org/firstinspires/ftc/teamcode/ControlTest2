@@ -1,0 +1,86 @@
+package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+
+@TeleOp
+
+public class ControlTest2 extends LinearOpMode{
+    
+    private DcMotor frontLeft;
+    private DcMotor backLeft;
+    private DcMotor frontRight;
+    private DcMotor backRight;
+    @Override
+    public void runOpMode(){
+        telemetry.addData("Status", "Initialized");
+        frontLeft = hardwareMap.get(DcMotor.class, "frontleft");
+        backLeft = hardwareMap.get(DcMotor.class, "backleft");
+        frontRight = hardwareMap.get(DcMotor.class, "frontright");
+        backRight = hardwareMap.get(DcMotor.class, "backright");
+        waitForStart();
+        while (opModeIsActive()){
+            if (gamepad1.left_stick_y > 0){
+                frontLeft.setPower(gamepad1.left_stick_y * -1);
+                backLeft.setPower(gamepad1.left_stick_y);
+                frontRight.setPower(gamepad1.left_stick_y * -1);
+                backRight.setPower(gamepad1.left_stick_y);
+            }
+            if (gamepad1.left_stick_y < 0){
+                frontLeft.setPower(gamepad1.left_stick_y * -1);
+                backLeft.setPower(gamepad1.left_stick_y);
+                frontRight.setPower(gamepad1.left_stick_y * -1);
+                backRight.setPower(gamepad1.left_stick_y);
+            }
+            if (gamepad1.left_stick_y < 0.25 && gamepad1.left_stick_y > -0.25){
+                frontLeft.setPower(0);
+                backLeft.setPower(0);
+                frontRight.setPower(0);
+                backRight.setPower(0);
+            }
+            
+            
+            
+            if (gamepad1.left_stick_x < 0){
+                frontLeft.setPower(gamepad1.left_stick_x);
+                backLeft.setPower(gamepad1.left_stick_x);
+                frontRight.setPower(gamepad1.left_stick_x);
+                backRight.setPower(gamepad1.left_stick_x);
+            }
+            if (gamepad1.left_stick_x > 0){
+                frontLeft.setPower(gamepad1.left_stick_x);
+                backLeft.setPower(gamepad1.left_stick_x);
+                frontRight.setPower(gamepad1.left_stick_x);
+                backRight.setPower(gamepad1.left_stick_x);
+            }
+            if (gamepad1.left_stick_x < 0.25 && gamepad1.left_stick_x > -0.25){
+                frontLeft.setPower(0);
+                backLeft.setPower(0);
+                frontRight.setPower(0);
+                backRight.setPower(0);
+            }
+            
+            
+            
+            if (gamepad1.right_stick_x < 0){
+                frontLeft.setPower(gamepad1.right_stick_x);
+                backLeft.setPower(gamepad1.right_stick_x * -1);
+                frontRight.setPower(gamepad1.right_stick_x * -1);
+                backRight.setPower(gamepad1.right_stick_x);
+            }
+            if (gamepad1.right_stick_x > 0){
+                frontLeft.setPower(gamepad1.right_stick_x);
+                backLeft.setPower(gamepad1.right_stick_x * -1);
+                frontRight.setPower(gamepad1.right_stick_x * -1);
+                backRight.setPower(gamepad1.right_stick_x);
+            }
+            if (gamepad1.right_stick_x < 0.25 && gamepad1.right_stick_x > -0.25){
+                frontLeft.setPower(0);
+                backLeft.setPower(0);
+                frontRight.setPower(0);
+                backRight.setPower(0);
+            }
+        }    
+    }    
+}    
