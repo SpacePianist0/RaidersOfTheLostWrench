@@ -1,3 +1,9 @@
+## what is this?
+
+Here you will find all of my code for the First Tech Challenge game PowerPlay. To get to my code (stuff I developed), go through path TeamCode/src/main/java/org/firstinspires/ftc/teamcode. My autonomous period is named Autouno and my teleop is ControlTestOne. I the auto, there is easy openCV, Road Runner, and other stuff you would need to download / import. go to LearnRoadRunner.com to see how to do road runner and google april tags easy opencv for ithub pages on april tag vision. Thank you for reading!
+
+
+
 ## NOTICE
 
 This repository contains the public FTC SDK for the Freight Frenzy (2021-2022) competition season.
