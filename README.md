@@ -1,6 +1,10 @@
 ## what is this?
 
-Here you will find all of my code for the First Tech Challenge game PowerPlay. To get to my code (stuff I developed), go through path TeamCode/src/main/java/org/firstinspires/ftc/teamcode. My autonomous period is named Autouno and my teleop is ControlTestOne. I the auto, there is easy openCV, Road Runner, and other stuff you would need to download / import. go to LearnRoadRunner.com to see how to do road runner and google april tags easy opencv for ithub pages on april tag vision. Thank you for reading!
+Here you will find all of my code for the First Tech Challenge game PowerPlay. To get to my code (stuff I developed), go through path TeamCode/src/main/java/org/firstinspires/ftc/teamcode. This is forked from CalKestis's FTC robot controler (https://github.com/FIRST-Tech-Challenge/FtcRobotController). My autonomous period is named Autouno and my teleop is ControlTestOne. In the auto, there is easy openCV, Road Runner, and other stuff you would need to download / import. go to LearnRoadRunner.com to see how to do road runner and https://github.com/OpenFTC/EOCV-AprilTag-Plugin for github pages on april tag vision. 
+
+Please use this code as a refrence and try to keep your own suff as original as you can. In order to grow as a programmer you need to make things on your own and expand off of the things that others teach you. I don't mind at all if you use any of this stuff just try to keep that in mind.
+
+Thank you for reading!
 
 
 
