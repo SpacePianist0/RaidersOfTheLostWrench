@@ -1,10 +1,7 @@
 ## TeamCode Module
 
-Welcome!
+Here is al of the code I have made. Feel free to take these as refrences for your own code! Below are instructions (not mine) for the basic beginings of FTC code.
 
-This module, TeamCode, is the place where you will write/paste the code for your team's
-robot controller App. This module is currently empty (a clean slate) but the
-process for adding OpModes is straightforward.
 
 ## Creating your own OpModes
 
